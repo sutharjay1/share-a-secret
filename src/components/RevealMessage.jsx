@@ -42,11 +42,11 @@ const RevealMessage = () => {
             )}
 
             <div
-              className={`flex lg:flex-row flex-col items-center ${
+              className={`flex flex-row items-center ${
                 revealMessage ? 'justify-end' : 'justify-start'
               } gap-3 ${revealMessage && 'mt-5'}`}
             >
-              {revealMessage ? (
+              {revealMessage && (
                 <button
                   onClick={flushData}
                   type="button"
@@ -54,13 +54,6 @@ const RevealMessage = () => {
                 >
                   Destory Secret
                 </button>
-              ) : (
-                <div className="w-full">
-                  <p>
-                    Be aware! The following secret can only be revealed one
-                    time.
-                  </p>
-                </div>
               )}
 
               {revealMessage ? (
