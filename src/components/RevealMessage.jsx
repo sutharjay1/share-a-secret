@@ -42,7 +42,7 @@ const RevealMessage = () => {
             )}
 
             <div
-              className={`flex items-center ${
+              className={`flex lg:flex-row flex-col items-center ${
                 revealMessage ? 'justify-end' : 'justify-start'
               } gap-3 ${revealMessage && 'mt-5'}`}
             >
