@@ -28,7 +28,7 @@ const Body = () => {
   return (
     <>
       <div className="w-full flex flex-col items-center justify-center">
-        <div className="min-w-[85%] h-auto py-4 lg:mt-52 mt-16 m-10">
+        <div className="min-w-[85%] h-auto py-4 lg:mt-52 mt-12 m-10">
           <h1 className="text-6xl font-bold text-left bg-gradient-to-r from-fuchsia-500 to-purple-500 bg-clip-text text-transparent">
             Share a Secret
           </h1>
