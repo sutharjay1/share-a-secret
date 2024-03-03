@@ -36,7 +36,12 @@ const RevealMessage = () => {
             {revealMessage && (
               <div className="w-full mb-5">
                 <h1 className="w-full px-4 py-4 font-semibold  placeholder:font-normal border bg-black/20 rounded-md focus:outline-none">
-                  {messageID && <p>{message}</p>}
+                  {messageID &&
+                    (message ? (
+                      <p>{message}</p>
+                    ) : (
+                      <p className="text-red-500 font-semibold  ">No Message</p>
+                    ))}
                 </h1>
               </div>
             )}
