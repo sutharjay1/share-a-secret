@@ -4,6 +4,7 @@ import { IoChevronBack } from 'react-icons/io5';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import { shareLink } from '../store/messageSlice';
+import { BsCheckLg } from 'react-icons/bs';
 
 const ShareLink = () => {
   const dispatch = useDispatch();
@@ -33,7 +34,10 @@ const ShareLink = () => {
         </div>
         <div className="min-w-[85%] mb-2 flex items-center justify-start">
           <Link to="/">
-            <button className="flex items-center justify-center bg-transparent hover:bg-zinc-900/10 backdrop-blur-xl text-zinc-500 font-semibold hover:text-zinc-400 py-2 px-4 rounded-sm">
+            <button
+              className="flex items-center justify-center bg-transparent hover:bg-zinc-900/10 backdrop-blur-xl text-zinc-500 font-semibold hover:text-zinc-400 py-2 px-4 rounded-sm"
+              onClick={(e) => console.log(e.stopPropagation())}
+            >
               <span className="mr-2 text-lg">
                 <IoChevronBack />
               </span>

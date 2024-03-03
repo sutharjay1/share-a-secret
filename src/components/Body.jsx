@@ -52,7 +52,10 @@ const Body = () => {
               <button
                 onClick={putData}
                 type="button"
-                className="flex items-center justify-center gap-2 py-[0.375rem] px-4 rounded-[0.25rem] bg-gradient-to-r from-fuchsia-600/50 to-purple-600/40  text-lg font-medium text-zinc-300  hover:bg-gradient-to-r hover:from-purple-600/0 hover:to-fuchsia-600/0 transition-all"
+                className={`flex items-center justify-center gap-2 py-[0.375rem] px-4 rounded-[0.25rem] bg-gradient-to-r from-fuchsia-600/50 to-purple-600/40  text-lg font-medium text-zinc-300  hover:bg-gradient-to-r hover:from-purple-600/0 hover:to-fuchsia-600/0 transition-all ${
+                  !messageID && 'cursor-not-allowed'
+                }`}
+                disabled={!messageID}
               >
                 Create Secret Link
               </button>
