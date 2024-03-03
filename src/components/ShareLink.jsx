@@ -45,7 +45,7 @@ const ShareLink = () => {
             </button>
           </Link>
         </div>
-        <div className="lg:min-w-[85%] sm:min-w-[70%] flex items-center justify-center px-6 bg-black/40  py-7 backdrop-blur-xl rounded-md border-[1px] mx-4 border-zinc-600 ">
+        <div className="lg:min-w-[85%] sm:min-w-[70%] flex items-center justify-center px-6 bg-black/40  py-7 backdrop-blur-xl rounded-md border-[1px] lg:mx-auto md:mx-auto sm:mx-4 mx-8 border-zinc-600 ">
           <div className="w-full flex items-center justify-center   text-black text-base">
             {messageID && (
               <div className="w-full flex flex-col items-center justify-center">
