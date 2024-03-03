@@ -28,7 +28,7 @@ const Body = () => {
   return (
     <>
       <div className="w-full flex flex-col items-center justify-center">
-        <div className="min-w-[85%] h-auto py-4 mt-52 m-10">
+        <div className="min-w-[85%] h-auto py-4 lg:mt-52 mt-20 m-10">
           <h1 className="text-6xl font-bold text-left bg-gradient-to-r from-fuchsia-500 to-purple-500 bg-clip-text text-transparent">
             Share a Secret
           </h1>
@@ -48,11 +48,11 @@ const Body = () => {
                 className="block p-2.5 w-full text-base outline-none active:outline-none text-zinc-300 bg-black/20 border rounded-sm"
               />
             </div>
-            <div className="flex items-center justify-end mt-7">
+            <div className="lg:flex md:flex w-full flex items-center lg:justify-end md:justify-end justify-center mt-7">
               <button
                 onClick={putData}
                 type="button"
-                className={`flex items-center justify-center gap-2 py-[0.375rem] px-4 rounded-[0.25rem] bg-gradient-to-r from-fuchsia-600/50 to-purple-600/40  text-lg font-medium text-zinc-300  transition-all `}
+                className={`lg:w-none md:w-auto w-full flex items-center justify-center gap-2 py-[0.375rem] px-4 rounded-[0.25rem] bg-gradient-to-r from-fuchsia-600/50 to-purple-600/40  text-lg font-medium text-zinc-300  transition-all `}
               >
                 Create Secret Link
               </button>
